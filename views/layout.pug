@@ -12,7 +12,7 @@ html
           .nav__section.nav__section--pages
             li.nav__item
               a.nav__link.nav__link--logo(href="/")
-                != h.icon('logo')
+                != h.icon('logo2')
             each item in h.menu
               li.nav__item
                 a.nav__link(href=item.slug, class=(currentPath.startsWith(item.slug) ? 'nav__link--active' : ''))
@@ -20,7 +20,7 @@ html
                   span #{item.title}
           .nav__section.nav__section--search
             .search
-              input.search__input(type="text" placeholder="Coffee, beer..." name="search")
+              input.search__input(type="text" placeholder="Express, node..." name="search")
               .search__results
           .nav__section.nav__section--user
             if user
