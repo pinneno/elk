@@ -13,11 +13,12 @@ body:before {
   background: linear-gradient(
     90deg,
     #48ded4 0%,
-    #a026bf 20%,
-    #e82c75 60%,
-    #ffc40e 85%,
+    #9933ff 10%,
+    #00ff99 60%,
+    #6666ff 85%,
     #48ded4 95%
   );
+
   height: 10px;
   width: 100%;
 }
@@ -594,9 +595,9 @@ label {
   box-shadow: linear-gradient(
     90deg,
     #48ded4 0%,
-    #a026bf 20%,
-    #e82c75 60%,
-    #ffc40e 85%,
+    #9933ff 10%,
+    #00ff99 60%,
+    #6666ff 85%,
     #48ded4 95%
   );
 }
@@ -762,9 +763,9 @@ label {
   background: linear-gradient(
       90deg,
       #48ded4 0%,
-      #a026bf 20%,
-      #e82c75 60%,
-      #ffc40e 85%,
+      #9933ff 10%,
+      #00ff99 60%,
+      #6666ff 85%,
       #48ded4 95%
     )
     fixed;
