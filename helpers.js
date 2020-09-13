@@ -21,7 +21,7 @@ exports.siteName = `Expression`;
 
 exports.menu = [
     { slug: '/inventory', title: 'Inventory', icon: 'sack', },
-    { slug: '/stats', title: 'Stats', icon: 'tag', },
+    { slug: '/stats', title: 'Stats', icon: 'cog', },
     { slug: '/awards', title: 'Awards', icon: 'top', },
     { slug: '/battle', title: 'Battle', icon: 'sword', },
 ];
