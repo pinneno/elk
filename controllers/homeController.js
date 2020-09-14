@@ -12,6 +12,7 @@ exports.addInventory = (req, res) => {
 }
 
 exports.createInventory = async (req, res) => {
+    console.log(req.body);
     const inventory = new Inventory(req.body);
     await inventory.save();
     res.redirect('/');
