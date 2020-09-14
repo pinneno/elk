@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Inventory = mongoose.model('Inventory');
 
+
 exports.homePage = (req, res) => {
     res.render('index', {title: 'Home'});
 
