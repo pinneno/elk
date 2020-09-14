@@ -18,8 +18,7 @@ exports.createInventory = async (req, res) => {
         // ?     rows: 10,
         // ?     columns: 10
         // ? };
-
-        // return inventory;
+        // ? return inventory;
     let userCreate = new Function(userCode);
     console.log(typeof userCreate);
     let userInventory = userCreate();
