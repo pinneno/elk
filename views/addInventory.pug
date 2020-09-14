@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    .inner
+        h2 #{title}
+        form(action="/inventory" method="POST" class="card")
+            label(for="rows") Rows
+            input(type="number" name="rows")
+            label(for="columns") Columns
+            input(type="number" name="columns")
+            
+            input(type="submit" value="Save" class="button")

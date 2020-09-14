@@ -511,7 +511,7 @@ h4,
 h5,
 h6 {
   font-size: 5rem;
-  font-family: "Panama";
+  font-family: "Palatino Linotype";
   font-weight: 600;
   letter-spacing: -1px;
 }
@@ -1354,7 +1354,7 @@ label {
   border: 0;
   background: #ffc40e;
   color: #303030;
-  font-family: "Panama";
+  font-family: "Palatino Linotype";
   font-weight: 600;
 }
 

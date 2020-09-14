@@ -10,6 +10,9 @@ mongoose.connection.on('error', (err) => {
     console.error(`🚫 Onoes! sumfin went wrong, mista rabbit: ${err.message}`);
 })
 
+// * Import all models
+require('./models/Inventory');
+
 // * Start our app
 const app = require('./app');
 app.set('port', process.env.PORT || 7777);
