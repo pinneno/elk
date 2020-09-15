@@ -17,11 +17,11 @@ exports.staticMap = ([lng, lat]) => `https://maps.googleapis.com/maps/api/static
 exports.icon = (name) => fs.readFileSync(`./public/images/icons/${name}.svg`);
 
 // * Some details about the site
-exports.siteName = `Expression`;
+exports.siteName = `Elk`;
 
 exports.menu = [
     { slug: '/inventory', title: 'Inventory', icon: 'sack', },
     { slug: '/stats', title: 'Stats', icon: 'cog', },
-    { slug: '/awards', title: 'Awards', icon: 'top', },
+    { slug: '/awards', title: 'Skills', icon: 'top', },
     { slug: '/battle', title: 'Battle', icon: 'sword', },
 ];
