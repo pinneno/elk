@@ -1373,8 +1373,8 @@ label {
 .button {
   border: 0;
   background: #6666ff;
-  color: #303030;
-  font-family: "Palatino Linotype";
+  color: #fff;
+  font-family: sans-serif;
   font-weight: 600;
 }
 
