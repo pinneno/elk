@@ -10,11 +10,12 @@ const {catchErrors} = require('../handlers/errorHandlers');
 
 // * Do work here
 router.get('/', homeController.homePage);
-router.get('/inventory', homeController.addInventory);
+router.get('/inventory', authController.isLoggedIn, homeController.addInventory);
 router.post('/inventory', catchErrors(homeController.createInventory));
 
 
 router.get('/login', userController.loginForm);
+router.post('/login', authController.login);
 router.get('/register', userController.registerForm);
 
 // * 1. Validate the registration data
@@ -25,5 +26,7 @@ router.post('/register',
     userController.register, 
     authController.login
 );
+
+router.get('/logout', authController.logout);
 
 module.exports = router;
