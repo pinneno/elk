@@ -32,5 +32,6 @@ exports.createInventory = async (req, res) => {
         columns: userInventory.columns
     });
     await inventory.save();
-    res.redirect('/');
+    req.flash('success', `Successfully created Inventory`)
+    res.redirect('/inventory');
 }
