@@ -12,9 +12,10 @@ const expressValidator = require('express-validator');
 const routes = require('./routes/index');
 const helpers = require('./helpers');
 const errorHandlers = require('./handlers/errorHandlers');
+require('./handlers/passport');
 
-const util = require('util');
-require('util.promisify').shim();
+// const util = require('util');
+// require('util.promisify').shim();
 
 // * Create our Express app
 const app = express();
@@ -67,11 +68,9 @@ app.use((req, res, next) => {
 
 // * Promisify some callback based APIs
 app.use((req, res, next) => {
-    // req.login = promisify(req.login, req);
-    req.login = util.promisify(req.login, req);
-
+    req.login = promisify(req.login, req);
     next();
-})
+});
 
 // * After all the above middleware, we finally handle our own routes
 app.use('/', routes);
