@@ -19,16 +19,17 @@ block content
                 .output output goes here
             .game-area game goes here
 
-        //- script.
-        //-     let jsEditor = CodeMirror.fromTextArea(
-        //-         document.getElementById("js-code"),
-        //-         {
-        //-             mode: "javascript",
-        //-             theme: "dracula",
-        //-             lineNumbers: true,
-        //-             autoCloseBrackets: true,
-        //-         }
-        //-     );
+        script.
+            let jsEditor = CodeMirror.fromTextArea(
+                document.getElementById("js-code"),
+                {
+                    mode: "javascript",
+                    theme: "dracula",
+                    lineNumbers: true,
+                    autoCloseBrackets: true,
+                }
+            );
+            jsEditor.setSize(null, 500);
 
     else
         .inner
