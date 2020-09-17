@@ -24,8 +24,17 @@ body:before {
   width: 100%;
 }
 
-.CodeMirror {
-  height: 60%;
+#inventory {
+  display: grid;
+  grid-template-columns: repeat(12, 50px);
+  grid-template-rows: repeat(5, 50px);
+  grid-gap: 0px;
+  text-align: center;
+  justify-content: center;
+}
+
+.cell {
+  border: 1px solid black;
 }
 
 .game-container {
@@ -58,6 +67,8 @@ body:before {
 
 .game-area {
   width: 60%;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 
