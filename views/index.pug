@@ -23,70 +23,10 @@ block content
                 p We'll need to make an Inventory to place the map in.
 
                 #inventory 
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-                    .cell x
-
-
-
-
+                    - var cells=Array(60).fill('x');
+                        each item, i in cells
+                            .cell x
+                    
 
         script.
             let jsEditor = CodeMirror.fromTextArea(
