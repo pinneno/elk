@@ -30,7 +30,8 @@ body:before {
 
 .game-container {
   display: flex;
-  height: 89vh;
+  /* height: 90vh; */
+  height: calc(100vh - 8vw);
 }
 
 
